@@ -1,0 +1,12 @@
+<div>
+  <label>name:
+    <input [(ngModel)]="anim.name" placeholder="name">
+  </label>
+</div>
+
+<h2>My Animals</h2>
+<ul class="animals">
+  <li *ngFor="let anim of animals">
+    <span class="badge">{{anim.id}}</span> {{anim.name}}
+  </li>
+</ul>
